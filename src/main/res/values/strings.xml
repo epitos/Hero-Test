@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Hero Test</string>
+    <string name="base_url">https://www.datakick.org/api/</string>
+</resources>

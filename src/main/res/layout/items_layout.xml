@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="brand name"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_below="@id/brand_name"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="name"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/size_title"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size:"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_toRightOf="@id/size_title"
+        android:layout_below="@id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="size"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/ingredients_title"
+            android:layout_toRightOf="@id/size"
+            android:layout_below="@id/name"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients: "
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_toRightOf="@id/ingredients_title"
+        android:layout_below="@id/name"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Ingredients"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+         <TextView
+             android:id="@+id/serving_size_title"
+             android:layout_toRightOf="@id/ingredients"
+             android:layout_below="@id/name"
+             android:padding="5dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Serving size: "
+             android:textSize="12sp"
+             android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/serving_size"
+        android:layout_below="@id/name"
+        android:layout_toRightOf="@id/serving_size_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="serving size"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+           <TextView
+                android:id="@+id/servings_per_container_title"
+                android:layout_below="@id/serving_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servings per container: "
+                android:textSize="12sp"
+                android:padding="5dp"
+               android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/servings_per_container"
+        android:layout_below="@id/serving_size"
+        android:layout_toRightOf="@id/servings_per_container_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Servings per container"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:visibility="gone"/>
+
+             <TextView
+                 android:id="@+id/calories_title"
+                 android:layout_below="@id/servings_per_container_title"
+                 android:padding="5dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Calories:"
+                 android:textSize="12sp"
+                 android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_below="@id/servings_per_container_title"
+        android:layout_toRightOf="@id/calories_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="calories"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/fat_calories_title"
+                    android:layout_below="@id/servings_per_container"
+                    android:layout_toRightOf="@id/calories"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat calories:"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fat_calories"
+        android:layout_below="@id/servings_per_container"
+        android:layout_toRightOf="@id/fat_calories_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="fat calories"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/fat_title"
+                    android:layout_below="@id/servings_per_container"
+                    android:layout_toRightOf="@id/fat_calories"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fat: "
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fat"
+        android:layout_below="@id/servings_per_container"
+        android:layout_toRightOf="@id/fat_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="fat "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/saturated_fat_title"
+                        android:layout_below="@id/calories_title"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturated_fat: "
+                        android:textSize="12sp"
+                        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/saturated_fat"
+        android:layout_below="@id/calories_title"
+        android:layout_toRightOf="@id/saturated_fat_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="saturated_fat "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+                   <TextView
+                       android:id="@+id/trans_fat_title"
+                       android:layout_below="@id/calories_title"
+                       android:layout_toRightOf="@id/saturated_fat"
+                       android:padding="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Trans fat:"
+                       android:textSize="12sp"
+                       android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/trans_fat"
+        android:layout_below="@id/calories_title"
+        android:layout_toRightOf="@id/trans_fat_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="trans fat "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+
+                   <TextView
+                       android:id="@+id/polyunsaturated_fat_title"
+                       android:layout_below="@id/saturated_fat_title"
+                       android:padding="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       tools:text="polyunsaturated fat"
+                       android:textSize="12sp"
+                       android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/polyunsaturated_fat"
+        android:layout_below="@id/saturated_fat_title"
+        android:layout_toRightOf="@id/polyunsaturated_fat_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="polyunsaturated fat"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+
+            <TextView
+                       android:id="@+id/monounsaturated_fat_title"
+                       android:layout_below="@id/polyunsaturated_fat"
+                       android:padding="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Monounsaturated fat: "
+                       android:textSize="12sp"
+                android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/monounsaturated_fat"
+        android:layout_below="@id/polyunsaturated_fat"
+        android:layout_toRightOf="@id/monounsaturated_fat_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Monounsaturated fat: "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+                   <TextView
+                       android:id="@+id/cholesterol_title"
+                       android:layout_below="@id/saturated_fat_title"
+                       android:layout_toRightOf="@id/polyunsaturated_fat"
+                       android:padding="5dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Cholesterol: "
+                       android:textSize="12sp"
+                       android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/cholesterol"
+        android:layout_below="@id/saturated_fat_title"
+        android:layout_toRightOf="@id/cholesterol_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="cholesterol"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/sodium_title"
+        android:layout_below="@id/monounsaturated_fat_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sodium:"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/sodium"
+        android:layout_below="@id/monounsaturated_fat_title"
+        android:layout_toRightOf="@id/sodium_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sodium"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/potassium_title"
+        android:layout_below="@id/monounsaturated_fat_title"
+        android:layout_toRightOf="@id/sodium"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Potassium: "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/potassium"
+        android:layout_below="@id/monounsaturated_fat_title"
+        android:layout_toRightOf="@id/potassium_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Potassium"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/carbohydrate_title"
+        android:layout_below="@id/sodium"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbohydrate:"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/carbohydrate"
+        android:layout_below="@id/sodium"
+        android:layout_toRightOf="@id/carbohydrate_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Carbohydrate"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fiber_title"
+        android:layout_below="@id/potassium"
+        android:layout_toRightOf="@id/carbohydrate"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiber: "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/fiber"
+        android:layout_below="@id/potassium"
+        android:layout_toRightOf="@id/fiber_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Fiber "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+    android:id="@+id/sugars_title"
+    android:layout_below="@id/potassium"
+    android:layout_toRightOf="@id/fiber"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sugars:"
+    android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/sugars"
+        android:layout_below="@id/potassium"
+        android:layout_toRightOf="@id/sugars_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Sugars:"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/protein_title"
+        android:layout_below="@id/carbohydrate_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein: "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/protein"
+        android:layout_below="@id/carbohydrate_title"
+        android:layout_toRightOf="@id/protein_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Protein: "
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/author_title"
+        android:layout_below="@id/carbohydrate_title"
+        android:layout_toRightOf="@id/protein"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Author:"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_below="@id/carbohydrate_title"
+        android:layout_toRightOf="@id/author_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Author"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/format_title"
+        android:layout_below="@id/carbohydrate_title"
+        android:layout_toRightOf="@id/author"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Format:"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/format"
+        android:layout_below="@id/carbohydrate_title"
+        android:layout_toRightOf="@id/format_title"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="fiber"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
