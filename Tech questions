@@ -1,0 +1,16 @@
+Q. How long did you spend on the coding test? 
+
+A.Possibly 2 and 1/2 or 3 hours. 
+
+Q.What would you add to your solution if you had more time? 
+
+A. I would have finished my sorting function, which was going to sort the list in ascending order by Brand name. 
+I was planning to do this via a check box. I would have also added several other sorting mechanics, such sorting by 
+desending order.
+
+Q.How would you track down a performance issue in production? Give an example of when you’ve done this previously.  
+
+A. Previously, how I've tracked down a performance issue, was by using a tool called Crashlytics. On a previous project I worked on
+called Easyfundrasing, I used this tool, to keep track of issues that occured with the app in realtime by receiving email 
+notifications The information gathered from the issues were the version of the OS and device the app haD an issue on.
+With this tool, I was alble to find the line(s) of code where the issue lied so that I could fix it.
